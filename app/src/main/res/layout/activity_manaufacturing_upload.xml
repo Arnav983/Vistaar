@@ -4,6 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".manaufacturing_upload">
+    tools:context=".farmer_upload">
+
+    <ImageView
+        android:id="@+id/imageViewMANU"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/DoneMANU"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/INFOMANU"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/ChooseMANU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="115dp"
+        android:background="@drawable/buttons_blue"
+        android:text="Choose"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/DoneMANU" />
+
+    <EditText
+        android:id="@+id/QUANTITYMANU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/INFOMANU"
+        app:layout_constraintStart_toStartOf="@+id/NAMEMENU"
+        app:layout_constraintTop_toBottomOf="@+id/NAMEMENU" />
+
+    <EditText
+        android:id="@+id/INFOMANU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="114dp"
+        android:ems="10"
+        android:hint="Info"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewMANU"
+        app:layout_constraintStart_toStartOf="@+id/QUANTITYMANU"
+        app:layout_constraintTop_toBottomOf="@+id/QUANTITYMANU" />
+
+    <EditText
+        android:id="@+id/NAMEMENU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="Name of product"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/QUANTITYMANU"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <Button
+        android:id="@+id/DoneMANU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/buttons_blue"
+        android:text="Upload"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewMANU"
+        app:layout_constraintTop_toBottomOf="@+id/ChooseMANU" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="131dp"
+        app:layout_constraintBottom_toTopOf="@+id/NAMEMENU"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
