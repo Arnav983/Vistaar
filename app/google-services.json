@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "114564128643",
+    "firebase_url": "https://vistaar-98315.firebaseio.com",
+    "project_id": "vistaar-98315",
+    "storage_bucket": "vistaar-98315.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114564128643:android:aa5238910cca40d9fc60b6",
+        "android_client_info": {
+          "package_name": "com.example.vistaar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114564128643-0e88q5365ebe45si7a87ejn7kldh62oh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vistaar",
+            "certificate_hash": "f4eedeb3eceaeca298d95e2d368c66e746f8317d"
+          }
+        },
+        {
+          "client_id": "114564128643-ij2u7fa5n6dko5qs6pn5q0bong05a2cn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgXsM2ekz_xzP9E6hPFxqJGIIjHVZBFd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114564128643-ij2u7fa5n6dko5qs6pn5q0bong05a2cn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

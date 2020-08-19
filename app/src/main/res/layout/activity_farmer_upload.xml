@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".farmer_upload">
+
+    <ImageView
+        android:id="@+id/imageViewFAM"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/DoneFAM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coton_app"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/ChooseFAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="114dp"
+        android:text="Choose"
+        android:background="@drawable/buttons_blue"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/DoneFAM"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFAM" />
+
+    <EditText
+        android:id="@+id/PRICEFAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ColorFAM"
+        app:layout_constraintStart_toStartOf="@+id/PNFARM"
+        app:layout_constraintTop_toBottomOf="@+id/PNFARM" />
+
+    <EditText
+        android:id="@+id/ColorFAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="Color"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/coton_size"
+        app:layout_constraintStart_toStartOf="@+id/PRICEFAM"
+        app:layout_constraintTop_toBottomOf="@+id/PRICEFAM" />
+
+    <EditText
+        android:id="@+id/PNFARM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="PNFARM"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/PRICEFAM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <Button
+        android:id="@+id/DoneFAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/buttons_blue"
+        android:text="Upload"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFAM"
+        app:layout_constraintTop_toBottomOf="@+id/ChooseFAM" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/PNFARM"
+        app:layout_constraintEnd_toEndOf="@+id/PNFARM"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/coton_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="Cotton_size"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/coton_pattern"
+        app:layout_constraintStart_toStartOf="@+id/ColorFAM"
+        app:layout_constraintTop_toBottomOf="@+id/ColorFAM" />
+
+    <EditText
+        android:id="@+id/coton_pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="Cotton_pattern"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/coton_app"
+        app:layout_constraintStart_toStartOf="@+id/coton_size"
+        app:layout_constraintTop_toBottomOf="@+id/coton_size" />
+
+    <EditText
+        android:id="@+id/coton_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:hint="Application"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewFAM"
+        app:layout_constraintStart_toStartOf="@+id/coton_pattern"
+        app:layout_constraintTop_toBottomOf="@+id/coton_pattern" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4ece9"
+    tools:context=".Field_select">
+
+
+    <Button
+        android:id="@+id/Farm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="55dp"
+        android:background="#f08f6f"
+        android:drawableLeft="@drawable/farmericon"
+        android:text="Farmer"
+        app:layout_constraintBottom_toTopOf="@+id/Manu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logout" />
+
+    <Button
+        android:id="@+id/Company"
+        android:layout_width="313dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="77dp"
+        android:background="#f08f6f"
+        android:drawableLeft="@drawable/companyicon"
+        android:text="Company"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Manu" />
+
+    <Button
+        android:id="@+id/Manu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="37dp"
+        android:background="#f08f6f"
+        android:drawableLeft="@drawable/manuicon"
+        android:text="Manufactor"
+        app:layout_constraintBottom_toTopOf="@+id/Company"
+        app:layout_constraintEnd_toEndOf="@+id/Company"
+        app:layout_constraintStart_toStartOf="@+id/Company"
+        app:layout_constraintTop_toBottomOf="@+id/Farm" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/buttons_blue"
+        android:text="logout"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/Farm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
